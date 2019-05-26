@@ -1,0 +1,18 @@
+<!-- Loaded items view -->
+<template [ngIf]="items != null && items.isNotEmpty">
+    <article *ngForIdentity="let item of items; let i = index">
+        <span class="rank">{{i + startingRank}}</span>
+        <item [item]="item"></item>
+    </article>
+</template>
+
+<footer>
+    <nav>
+        <div *ngIf="previousPageUrl != null"  >
+            <a [routerLink]="previousPageUrl">上一页</a>
+        </div>
+        <div class="next" *ngIf="nextPageUrl != null">
+            <a [routerLink]="nextPageUrl">下一页</a>
+        </div>
+    </nav>
+</footer>

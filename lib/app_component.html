@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <a [routerLink]="newsUrl" routerLinkActive="active"><span>top</span></a>
+        <a [routerLink]="newUrl" routerLinkActive="active"><span>new</span></a>
+        <a [routerLink]="showUrl" routerLinkActive="active"><span>show</span></a>
+        <a [routerLink]="askUrl" routerLinkActive="active"><span>ask</span></a>
+        <a [routerLink]="jobsUrl" routerLinkActive="active"><span>jobs</span></a>
+    </nav>
+</header>
+<main>
+    <router-outlet [routes]="routes"></router-outlet>
+</main>

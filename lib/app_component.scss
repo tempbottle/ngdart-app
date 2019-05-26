@@ -1,0 +1,36 @@
+.notice {
+    text-align: center;
+    color: #212121;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    max-width: 800px;
+}
+
+span {
+    text-align: center;
+}
+
+a.active {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    color: #0f0f0f;
+    background-color: #aabded;
+}
+
+
+header nav a {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    padding: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+header nav a:hover {
+    color: #d5fbff;
+}
+
+header nav img {
+    width: 40px;
+}
