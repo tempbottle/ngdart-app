@@ -2,9 +2,9 @@ import 'package:angular/angular.dart';
 import 'package:angular/experimental.dart';
 import 'package:angular_router/angular_router.dart';
 
-import '../feed/hacker_news_service.dart';
-import '../comment/comment_component.dart';
-import 'item_component.dart';
+import 'package:ngdartapp/src/hacker_news_service.dart';
+import 'package:ngdartapp/src/comment/comment_component.dart';
+import 'package:ngdartapp/src/item/item_component.dart';
 
 final _service = HackerNewsService(defaultBaseUrl);
 HackerNewsService getNewsService() => _service;

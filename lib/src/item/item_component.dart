@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
-import '../routes.dart';
+import 'package:ngdartapp/src/routes.dart';
 
 @Component(
   selector: 'item',
