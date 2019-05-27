@@ -5,10 +5,10 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
-import 'src/routes.dart';
-import 'src/feed/feed_component.template.dart' as feed;
-import 'src/item/item_detail_component.template.dart' deferred as item_detail;
-import 'src/utils.dart';
+import 'package:ngdartapp/src/routes.dart';
+import 'package:ngdartapp/src/feed/feed_component.template.dart' as feed;
+import 'package:ngdartapp/src/item/item_detail_component.template.dart' deferred as item_detail;
+import 'package:ngdartapp/src/utils.dart';
 
 @Component(
   selector: 'app',
