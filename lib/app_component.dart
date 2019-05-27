@@ -8,6 +8,7 @@ import 'package:angular_router/angular_router.dart';
 import 'src/routes.dart';
 import 'src/feed/feed_component.template.dart' as feed;
 import 'src/item/item_detail_component.template.dart' deferred as item_detail;
+import 'src/utils.dart';
 
 @Component(
   selector: 'app',
@@ -33,16 +34,19 @@ class AppComponent implements AfterViewInit {
   }
 
   void _setHeaderFooter() {
-    var y = window.scrollY;
-    if (window.innerHeight + window.scrollY >= document.body.clientHeight) {
-      //window.console.log("at bottom");
-    }
-    //window.console.log("y="+y.toString());
+
     var header = window.document.querySelectorAll("header");
-    if (y<3) {
+    if (ScrollPosDetect.isAtTop()) {
       header.style.display = 'flex';
     } else {
       header.style.display = 'none';
+    }
+
+    var footer = window.document.querySelectorAll("footer");
+    if(ScrollPosDetect.isAtBottom()){
+      footer.style.display = 'flex';
+    }else{
+      footer.style.display = 'none';
     }
   }
 
