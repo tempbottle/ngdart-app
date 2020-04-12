@@ -6,6 +6,10 @@ footer a {
     display: inline;
 }
 
+footer {
+    display: flex;
+}
+
 div.next {
     text-align: right;
 }
